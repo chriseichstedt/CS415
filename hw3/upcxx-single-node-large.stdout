@@ -1,0 +1,33 @@
+Finished inserting in 16.201532
+Assembled in 44.526620 total
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (67447156736). Adjusted segment size to 67447156736.
+Finished inserting in 8.200732
+Assembled in 22.534883 total
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (33723576320). Adjusted segment size to 33723576320.
+Finished inserting in 4.321916
+Assembled in 11.789005 total
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (16861786112). Adjusted segment size to 16861786112.
+Finished inserting in 2.493380
+Assembled in 6.544503 total
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (8430891008). Adjusted segment size to 8430891008.
+Finished inserting in 1.529108
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Error: k-mer not found in hashmap.
+*** Caught a fatal signal: SIGABRT(6) on node 5/16
+NOTICE: Before reporting bugs, run with GASNET_BACKTRACE=1 in the environment to generate a backtrace. 
+NOTICE: We recommend linking the debug version of GASNet to assist you in resolving this application issue.
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Error: k-mer not found in hashmap.
+*** Caught a fatal signal: SIGABRT(6) on node 9/16
+NOTICE: Before reporting bugs, run with GASNET_BACKTRACE=1 in the environment to generate a backtrace. 
+NOTICE: We recommend linking the debug version of GASNet to assist you in resolving this application issue.
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (4215443456). Adjusted segment size to 4215443456.
+Finished inserting in 1.341053
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Error: k-mer not found in hashmap.
+*** Caught a fatal signal: SIGABRT(6) on node 16/32
+NOTICE: Before reporting bugs, run with GASNET_BACKTRACE=1 in the environment to generate a backtrace. 
+NOTICE: We recommend linking the debug version of GASNet to assist you in resolving this application issue.
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (2107719680). Adjusted segment size to 2107719680.
+Finished inserting in 1.478057
+Assembled in 4.634405 total

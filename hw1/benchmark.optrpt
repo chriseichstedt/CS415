@@ -1,0 +1,138 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+Begin optimization report for: main(int, char **)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at benchmark.c(96,3)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at benchmark.c(57,3) inlined into benchmark.c(105,5)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(57,3) inlined into benchmark.c(105,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(57,3) inlined into benchmark.c(105,5)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(57,3) inlined into benchmark.c(106,5)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(57,3) inlined into benchmark.c(106,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(57,3) inlined into benchmark.c(106,5)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(57,3) inlined into benchmark.c(107,5)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(57,3) inlined into benchmark.c(107,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(57,3) inlined into benchmark.c(107,5)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(114,5)
+      remark #15521: loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+
+      LOOP BEGIN at benchmark.c(121,7)
+         remark #15344: loop was not vectorized: vector dependence prevents vectorization. First dependence is shown below. Use level 5 report for details
+      LOOP END
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(63,3) inlined into benchmark.c(147,5)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(63,3) inlined into benchmark.c(147,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(63,3) inlined into benchmark.c(147,5)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(63,3) inlined into benchmark.c(148,5)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(63,3) inlined into benchmark.c(148,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(63,3) inlined into benchmark.c(148,5)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(63,3) inlined into benchmark.c(149,5)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(63,3) inlined into benchmark.c(149,5)
+      remark #15300: LOOP WAS VECTORIZED
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(63,3) inlined into benchmark.c(149,5)
+   <Remainder loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at benchmark.c(155,5)
+      remark #15520: loop was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria   [ benchmark.c(52,3) ]
+   LOOP END
+LOOP END
+
+LOOP BEGIN at benchmark.c(162,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+===========================================================================
+
+Begin optimization report for: fill(double *, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at benchmark.c(57,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at benchmark.c(57,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at benchmark.c(57,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================
+
+Begin optimization report for: absolute_value(double *, int)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at benchmark.c(63,3)
+<Peeled loop for vectorization>
+LOOP END
+
+LOOP BEGIN at benchmark.c(63,3)
+   remark #15300: LOOP WAS VECTORIZED
+LOOP END
+
+LOOP BEGIN at benchmark.c(63,3)
+<Remainder loop for vectorization>
+LOOP END
+===========================================================================

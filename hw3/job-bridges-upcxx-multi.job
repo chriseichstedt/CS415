@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH -A sc5fp4p
+#SBATCH -J upcxx-multi-node
+#SBATCH -o upcxx-multi-node.stdout
+#SBATCH -N 32
+#SBATCH -p RM
+#SBATCH -t 00:480:00
+source modules.sh
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000M upcxx-run -n 1 -N 1 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/human-chr14-synthetic.txt
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000M upcxx-run -n 1 -N 2 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/human-chr14-synthetic.txt
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000M upcxx-run -n 1 -N 4 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/human-chr14-synthetic.txt
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000M upcxx-run -n 1 -N 8 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/human-chr14-synthetic.txt
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000M upcxx-run -n 1 -N 32 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/human-chr14-synthetic.txt

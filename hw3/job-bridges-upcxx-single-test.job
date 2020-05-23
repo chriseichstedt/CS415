@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH -A sc5fp4p
+#SBATCH -J upcxx-single-node-test
+#SBATCH -o upcxx-single-node-test.stdout
+#SBATCH -N 1
+#SBATCH -p RM
+#SBATCH -t 00:480:00
+source modules.sh
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000MB upcxx-run -n 1 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/test.txt
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000MB upcxx-run -n 2 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/test.txt
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000MB upcxx-run -n 4 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/test.txt
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000MB upcxx-run -n 8 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/test.txt
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000MB upcxx-run -n 16 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/test.txt
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000MB upcxx-run -n 32 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/test.txt
+UPCXX_SEGMENT_MB=120000 GASNET_MAX_SEGSIZE=120000MB upcxx-run -n 64 ./kmer_hash /pylon5/sc5fp4p/bbrock/hw3-datasets/test.txt

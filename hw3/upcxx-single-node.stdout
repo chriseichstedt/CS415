@@ -1,0 +1,24 @@
+Finished inserting in 54.601103
+Assembled in 154.012627 total
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (67447156736). Adjusted segment size to 67447156736.
+Finished inserting in 27.414082
+Assembled in 73.481572 total
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (33723576320). Adjusted segment size to 33723576320.
+Finished inserting in 15.153514
+Assembled in 39.346773 total
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (16861786112). Adjusted segment size to 16861786112.
+Finished inserting in 8.875347
+Assembled in 22.274630 total
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (8430891008). Adjusted segment size to 8430891008.
+Finished inserting in 5.465264
+Assembled in 12.820158 total
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (4215443456). Adjusted segment size to 4215443456.
+Finished inserting in 5.153579
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Error: k-mer not found in hashmap.
+*** Caught a fatal signal: SIGABRT(6) on node 30/32
+NOTICE: Before reporting bugs, run with GASNET_BACKTRACE=1 in the environment to generate a backtrace. 
+NOTICE: We recommend linking the debug version of GASNet to assist you in resolving this application issue.
+WARNING: Requested UPC++ segment size (125829120000) is larger than the GASNet segment size (2107719680). Adjusted segment size to 2107719680.
+Finished inserting in 3.953969
+Assembled in 13.921900 total
